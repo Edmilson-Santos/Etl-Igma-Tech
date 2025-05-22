@@ -38,14 +38,14 @@ Create Table DimCalendar
 
 ![alt text](Documentation/imagens/DimLocation.png)
 
-Create Table DimCalendar
+Create Table DimLocation
 [DimLocation.sql](Scripts/CreateTable/DimLocation.sql)
 
 #### DimPayment
 
 ![alt text](Documentation/imagens/DimPaymentType.png)
 
-Create Table DimCalendar
+Create Table DimPayment
 [DimPaymentType.sql](Scripts/CreateTable/DimPaymentType.sql)
 
 
@@ -53,7 +53,7 @@ Create Table DimCalendar
 
 ![alt text](Documentation/imagens/DimRateCode.png)
 
-Create Table DimCalendar
+Create Table DimRatecod
 [DimRateCode.sql](Scripts/CreateTable/DimRateCode.sql)
 
 
@@ -62,14 +62,14 @@ Create Table DimCalendar
 
 ![alt text](Documentation/imagens/DimStoreFlag.png)
 
-Create Table DimCalendar
+Create Table DimStoreFlag
 [DimStoreFlag.sql](Scripts/CreateTable/DimStoreFlag.sql)
 
 #### DimVendor
 
 ![alt text](Documentation/imagens/DimVendor.png)
 
-Create Table DimCalendar
+Create Table DimVendor
 [DimVendor.sql](Scripts/CreateTable/DimVendor.sql)
 
 
