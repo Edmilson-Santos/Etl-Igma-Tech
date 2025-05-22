@@ -11,8 +11,23 @@ pip install -r requirements.txt
 ```
 # Descrição 
 ## Criação de ETL para visao dimensional em DW tabela Silver 
-Script principal pipiline de atualizações de dados:[main.py](Scripts/Prod/main.py)
-Pasta com ETL com arquivos .py de cada tabela dimensão e fato:[Prod](Scripts/Prod)
+O que foi entregue com projeto?<br>
+1°:Script Python com o pipeline de tratamento e exportação das tabelas fato e dimensão em arquivos parquet.<br>
+2°:Scripts SQL para criação das tabelas fato e dimensão (CREATE TABLE).<br>
+3°:Documentação contendo o dicionário de tabelas e campos gerados.<br>
+4°:Diagrama completo da processo de ETL documentando tabelas e chaves de ligação entre elas <br>
+5°:Arquivo README  com toda as descrições e detalhamentos do projeto <br>
+
+
+
+
+
+## Detalhamento de pastas do projeto 
+Script principal pipiline de atualizações de dados:[main.py](Scripts/Prod/main.py)<br>
+ETL com python Produção:[Prod](Scripts/Prod)<br>
+Ambiente de Dev e Testes:[Dev](Scripts/Dev)<br>
+Arquivos de Origem e Destino Após ETL:[Storage](Storage)
+Script SQL Create Table [CreateTable.sql](Scripts/CreateTable)
 
 
 
