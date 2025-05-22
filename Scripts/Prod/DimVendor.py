@@ -8,11 +8,11 @@ def create_dim_vendor():
     path_parquet = os.path.join(get_parquet_path(), 'database.parquet')
     destination_vendor = os.path.join(get_dim_path(), 'dim_vendor_jan.parquet')
 
-    df_vendor = pd.read_parquet(path_parquet)
+    df = pd.read_parquet(path_parquet)
     #df_vendor.head(2)
 
     #ETL
-    df_dim_vendor = df_vendor[['VendorID']].drop_duplicates().copy()
+    df_dim_vendor = df[['VendorID']].drop_duplicates().copy()
 
     map_vendor = {
         1: 'Creative Mobile Technologies, LLC',
