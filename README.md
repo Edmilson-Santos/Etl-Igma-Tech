@@ -2,14 +2,17 @@
 Passos do projetos + especificações para rodar local
 
 # Iniciando ambiente 
+#### pytho version 3.11.4
 ```bash
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 
 ```
-# descrição dos scripts
-
+# Descrição 
+## Criação de ETL para visao dimensional em DW tabela Silver 
+Script principal pipiline de atualizações de dados:[main.py](Scripts/Prod/main.py)
+Pasta com ETL com arquivos .py de cada tabela dimensão e fato:[Prod](Scripts/Prod)
 
 
 
@@ -55,6 +58,19 @@ Create Table DimCalendar
 
 
 
+#### DimStoreFlag
+
+![alt text](Documentation/imagens/DimStoreFlag.png)
+
+Create Table DimCalendar
+[DimStoreFlag.sql](Scripts/CreateTable/DimStoreFlag.sql)
+
+#### DimVendor
+
+![alt text](Documentation/imagens/DimVendor.png)
+
+Create Table DimCalendar
+[DimVendor.sql](Scripts/CreateTable/DimVendor.sql)
 
 
 
@@ -67,7 +83,7 @@ Create Table DimCalendar
 
 
 
-Script principal pipiline de atualizações de dados
-[main.py](Scripts/Prod/main.py)
+
+
 
 
