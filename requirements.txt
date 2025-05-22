@@ -1,9 +1,6 @@
 pandas
 numpy
-openpyxl
-requests
 sqlalchemy
-psycopg2-binary
 pyarrow
 fastparquet
 
