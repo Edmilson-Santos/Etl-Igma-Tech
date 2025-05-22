@@ -23,7 +23,7 @@ ETL com python Produção:[Prod](Scripts/Prod)<br>
 Ambiente de Dev e Testes:[Dev](Scripts/Dev)<br>
 Arquivos de Origem e Destino Após ETL:[Storage](Storage)<br>
 Script SQL Create Table:[CreateTable.sql](Scripts/CreateTable)<br>
-dicionário de tabelas e campos gerados: [CreateTable.sql](Documentation/data_dictionary.pdf)<br>
+dicionário de tabelas e campos gerados: [data_dictionary_processo_ETL](Documentation/data_dictionary_processo_ETL.pdf)<br>
 
 
 
