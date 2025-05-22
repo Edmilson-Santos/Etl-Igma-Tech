@@ -23,7 +23,8 @@ DimCalendar
 
 Create Table DimCalendar
 
-[DimCalendar.sql](Scripts/Create Table/DimCalendar.sql)
+[Scripts/Create Table/DimCalendar.sql](Scripts/Create Table/DimCalendar.sql)
+
 
 
 Script principal
