@@ -7,7 +7,7 @@ from path_destination_Dim import get_dim_path
 
 def create_dim_ratecode():
     path_parquet = os.path.join(get_parquet_path(), 'database.parquet')
-    destination_Ratecode = os.path.join(get_dim_path(), 'dim_Ratecode_jan.parquet')
+    destination_Ratecode = os.path.join(get_dim_path(), 'dim_Ratecode.parquet')
 
     df = pd.read_parquet(path_parquet)
 
@@ -31,4 +31,15 @@ def create_dim_ratecode():
     }
 
     df_dim_ratecode['RateCodeName'] = df_dim_ratecode['RatecodeID'].map(map_ratecode)
+    if os.path.exists(destination_Ratecode):
+        df_existente = pd.read_parquet(destination_Ratecode)
+        df_dim_ratecode = pd.concat([df_dim_ratecode, df_existente], ignore_index=True)
+        
+        df_dim_ratecode = df_dim_ratecode.drop_duplicates()
+    else:
+        pass
+      
     df_dim_ratecode.to_parquet(destination_Ratecode, index=False) #salvar parquet no destino
+
+'''if __name__ == "__main__":
+    create_dim_ratecode()'''
