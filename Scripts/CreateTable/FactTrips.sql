@@ -5,7 +5,7 @@ CREATE TABLE FactTrips (
     PassengerCount FLOAT,
     TripDistance FLOAT,
     RatecodeID FLOAT NOT NULL,
-    StoreAndFwdFlag Varchat(1) NOT NULL,
+    StoreAndFwdFlag  (1) NOT NULL,
     PULocationID INT NOT NULL,
     DOLocationID INT NOT NULL,
     PaymentType INT NOT NULL,

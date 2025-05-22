@@ -1,0 +1,74 @@
+Table "FactTrips" {
+  "VendorID" INT [not null, pk]
+  "TpepPickupDatetime" DATETIME 
+  "TpepDropoffDatetime" DATETIME 
+  "PassengerCount" FLOAT
+  "TripDistance" FLOAT
+  "RatecodeID" FLOAT [not null, pk]
+  "StoreAndFwdFlag" VARCHAR(1) [not null, pk]
+  "PULocationID" INT [not null, pk]
+  "DOLocationID" INT [not null, pk]
+  "PaymentType" INT [not null, pk]
+  "FareAmount" FLOAT
+  "Extra" FLOAT
+  "MtaTax" FLOAT
+  "TipAmount" FLOAT
+  "TollsAmount" FLOAT
+  "ImprovementSurcharge" FLOAT
+  "TotalAmount" FLOAT
+  "CongestionSurcharge" FLOAT
+  "AirportFee" FLOAT
+  "CbdCongestionFee" FLOAT
+  
+}Table "DimLocation" {
+  "LocationID" INT [pk]
+  "Borough" VARCHAR(100)
+  "Zone" VARCHAR(150)
+  "ServiceZone" VARCHAR(50)
+}
+
+Table "DimPaymentType" {
+  "PaymentType" INT [pk]
+  "PaymentName" VARCHAR(50)
+}
+
+Table "DimRateCode" {
+  "RatecodeID" INT [pk]
+  "RateCodeName" VARCHAR(100)
+}
+
+Table "DimStoreFlag" {
+  "StoreAndFwdFlag" varchar(1) [pk]
+  "StoreFlagName" VARCHAR(50)
+}
+
+Table "DimCalendar" {
+  "Data" DATE [pk]
+  "Ano" INT [not null]
+  "Mes" INT [not null]
+  "Dia" INT [not null]
+  "DiaDaSemana" VARCHAR(25) [not null]
+  "Trimestre" INT [not null]
+  "MesAbreviado" VARCHAR(5) [not null]
+  Note: '''
+  Para relacionamento com a FactTripes as colunas data da fato
+  devem ser convertidas para somente data
+  '''
+}
+
+Table "DimVendor" {
+  "VendorID" INT [pk]
+  "VendorName" VARCHAR(50)
+}
+
+
+
+Ref: "DimLocation"."LocationID" < "FactTrips"."PULocationID"
+Ref: "DimLocation"."LocationID" < "FactTrips"."DOLocationID"
+Ref: "DimPaymentType"."PaymentType" < "FactTrips"."PaymentType"
+Ref: "DimRateCode"."RatecodeID" < "FactTrips"."RatecodeID"
+Ref: "DimStoreFlag"."StoreAndFwdFlag" < "FactTrips"."StoreAndFwdFlag"
+Ref: "DimCalendar"."Data" < "FactTrips"."TpepPickupDatetime"
+Ref: "DimCalendar"."Data" < "FactTrips"."TpepDropoffDatetime"
+
+Ref: "DimVendor"."VendorID" < "FactTrips"."VendorID"

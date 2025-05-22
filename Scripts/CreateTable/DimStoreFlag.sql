@@ -1,4 +1,4 @@
 CREATE TABLE DimStoreFlag (
-    StoreAndFwdFlag CHAR(1) PRIMARY KEY,
+    StoreAndFwdFlag VARCHAR(1) PRIMARY KEY,
     StoreFlagName VARCHAR(50)
 );
