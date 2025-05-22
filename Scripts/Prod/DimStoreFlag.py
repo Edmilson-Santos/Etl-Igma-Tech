@@ -14,7 +14,7 @@ def create_dim_storeflag():
     df_dim_StoreFlag = df[['store_and_fwd_flag']].drop_duplicates().copy()
     df_dim_StoreFlag = df_dim_StoreFlag.applymap(lambda x: 'U' if (pd.isna(x) or x == "") else x)
 
-    df_dim_StoreFlag.rename(columns={'store_and_fwd_flag': 'StoreFwdFlag'}, inplace=True)
+    df_dim_StoreFlag.rename(columns={'store_and_fwd_flag': 'StoreAndFwdFlag'}, inplace=True)
 
     map_store_flag = {
         'Y': 'store and forward trip',
@@ -22,7 +22,7 @@ def create_dim_storeflag():
         'U': 'Null/unknown'
     }
 
-    df_dim_StoreFlag['StoreFlagName'] = df_dim_StoreFlag['StoreFwdFlag'].map(map_store_flag)
+    df_dim_StoreFlag['StoreFlagName'] = df_dim_StoreFlag['StoreAndFwdFlag'].map(map_store_flag)
 
     df_dim_StoreFlag.head(30)
 
