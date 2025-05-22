@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 #### FactTrips
 
-![alt text](Documentation/imagens/FactTrips.png.png)
+![alt text](Documentation/imagens/FactTrips.png)
 
 Create Table FactTrips
 [FactTrips.sql](Scripts/CreateTable/FactTrips.sql)
