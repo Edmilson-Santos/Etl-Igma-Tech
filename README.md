@@ -10,5 +10,8 @@ pip install -r requirements.txt
 
 ```
 # descrição dos scripts
-
+teste imagem
 ![alt text](Documentation/imagens/image.png)
+
+Script principal
+[main.py](Scripts/Prod/main.py)
