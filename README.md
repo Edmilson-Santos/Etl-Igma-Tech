@@ -22,13 +22,13 @@ Script principal pipeline de atualizações de dados:[main.py](Scripts/Prod/main
 ETL com python Produção:[Prod](Scripts/Prod)<br>
 Ambiente de Dev e Testes:[Dev](Scripts/Dev)<br>
 Arquivos de Origem e Destino Após ETL:[Storage](Storage)<br>
-Script SQL Create Table [CreateTable.sql](Scripts/CreateTable)<br>
+Script SQL Create Table:[CreateTable.sql](Scripts/CreateTable)<br>
+dicionário de tabelas e campos gerados: [CreateTable.sql](Documentation/data_dictionary.pdf)<br>
 
 
 
 # Dados Gerados x Create Table
 ### Mostra como os arquivos foram gerados e a documentação de tabelas em banco 
-
 
 
 #### Diagrama do projeto
