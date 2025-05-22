@@ -9,3 +9,4 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 ```
+# descrição dos scripts
