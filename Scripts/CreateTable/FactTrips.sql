@@ -1,0 +1,30 @@
+CREATE TABLE FactTrips (
+    VendorID INT NOT NULL,
+    TpepPickupDatetime DATETIME,
+    TpepDropoffDatetime DATETIME,
+    PassengerCount FLOAT,
+    TripDistance FLOAT,
+    RatecodeID FLOAT NOT NULL,
+    StoreAndFwdFlag Varchat(1) NOT NULL,
+    PULocationID INT NOT NULL,
+    DOLocationID INT NOT NULL,
+    PaymentType INT NOT NULL,
+    FareAmount FLOAT,
+    Extra FLOAT,
+    MtaTax FLOAT,
+    TipAmount FLOAT,
+    TollsAmount FLOAT,
+    ImprovementSurcharge FLOAT,
+    TotalAmount FLOAT,
+    CongestionSurcharge FLOAT,
+    AirportFee FLOAT,
+    CbdCongestionFee FLOAT,
+    PRIMARY KEY (
+        VendorID,
+        RatecodeID,
+        StoreAndFwdFlag,
+        PULocationID,
+        DOLocationID,
+        PaymentType
+    )
+);
