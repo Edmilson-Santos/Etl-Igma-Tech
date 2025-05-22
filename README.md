@@ -18,7 +18,7 @@ O que foi entregue com projeto?<br>
 
 
 ## Detalhamento de pastas do projeto 
-Script principal pipiline de atualizações de dados:[main.py](Scripts/Prod/main.py)<br>
+Script principal pipeline de atualizações de dados:[main.py](Scripts/Prod/main.py)<br>
 ETL com python Produção:[Prod](Scripts/Prod)<br>
 Ambiente de Dev e Testes:[Dev](Scripts/Dev)<br>
 Arquivos de Origem e Destino Após ETL:[Storage](Storage)<br>
@@ -30,6 +30,8 @@ Script SQL Create Table [CreateTable.sql](Scripts/CreateTable)<br>
 ### Mostra como os arquivos foram gerados e a documentação de tabelas em banco 
 
 
+
+#### Diagrama do projeto
 Link de acesso ao diagrama: https://dbdiagram.io/d/Taxi-Trip-682f2c6cb9f7446da3b4556e
 ![alt text](Documentation/imagens/Diagram.png)
 
@@ -87,10 +89,12 @@ Create Table DimVendor
 [DimVendor.sql](Scripts/CreateTable/DimVendor.sql)
 
 
+#### Arquivos gerados no final do processo de ETL
 
+![alt text](Documentation/imagens/ArquivosParquet.png)
 
-
-
+Pasta Destino
+[Storage](Storage)<br>
 
 
 
