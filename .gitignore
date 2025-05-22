@@ -9,3 +9,6 @@ __pycache__/
 # arquivos temporários
 *.log
 *.tmp
+
+# preservar arquivo de case no github mas manter no drive
+Documentation/case_engenheiro_de_dados.pdf
