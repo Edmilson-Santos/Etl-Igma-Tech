@@ -21,6 +21,7 @@ DimCalendar
 
 ![alt text](Documentation/imagens/DimCalendar.png)
 
+Create Table DimCalendar
 [DimCalendar.sql](Scripts/Create Table/DimCalendar.sql)
 
 
