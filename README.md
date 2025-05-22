@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 
 
-# Crete table x dados gerados
+# Creat table x dados gerados
 ### Mostra como os arquivos foram gerados e a documentação de tabelas em banco 
 
 DimCalendar
@@ -22,6 +22,7 @@ DimCalendar
 ![alt text](Documentation/imagens/DimCalendar.png)
 
 [DimCalendar.sql](Scripts/Create Table/DimCalendar.sql)
+
 
 Script principal
 
