@@ -11,4 +11,4 @@ pip install -r requirements.txt
 ```
 # descrição dos scripts
 
-![alt text](Documentation\imagens\image.png)
+![alt text](Documentation/imagens/image.png)
